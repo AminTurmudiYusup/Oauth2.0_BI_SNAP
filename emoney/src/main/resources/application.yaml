@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: emoney
+
+server:
+  port: 8082
+  servlet:
+    context-path: /api/v1
+
+path:
+  b2b2c: /b2b2c
+  b2b: /b2b

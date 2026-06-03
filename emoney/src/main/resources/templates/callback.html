@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>OAuth Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .success {
+            color: #2e7d32;
+        }
+
+        .error {
+            color: #c62828;
+        }
+
+        .code-box {
+            background: #f1f3f5;
+            padding: 10px;
+            border-radius: 5px;
+            word-break: break-all;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+
+        .muted {
+            color: #777;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #1976d2;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+    <h2>OAuth Callback</h2>
+
+    <!-- Error -->
+    <div th:if="${error}">
+        <p class="error">❌ Authorization Failed</p>
+        <p th:text="${error}"></p>
+    </div>
+
+    <!-- Success -->
+    <div th:if="${code}">
+        <p class="success">✅ Authorization Successful</p>
+        <p>Authorization Code:</p>
+        <div class="code-box" th:text="${code}"></div>
+    </div>
+
+    <!-- Empty -->
+    <div th:if="${code == null and error == null}">
+        <p class="muted">No data received.</p>
+    </div>
+
+    <!-- Copy button -->
+    <div th:if="${code}">
+        <button onclick="copyCode()">Copy Code</button>
+    </div>
+
+</div>
+
+<script>
+    function copyCode() {
+        const code = document.querySelector('.code-box').innerText;
+        navigator.clipboard.writeText(code);
+        alert('Code copied!');
+    }
+</script>
+
+</body>
+</html>

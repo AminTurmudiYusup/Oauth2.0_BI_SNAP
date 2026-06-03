@@ -1,0 +1,46 @@
+server:
+  port: 8081
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://172.17.0.2:5432/postgres?schema=oauth
+    username: postgres
+    password: myNewSecurePass123
+    pool:
+      enabled: true
+      initial-size: 20
+      max-size: 200
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: api-route
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/**
+          filters:
+            - name: CacheRequestBodyFilter
+            - name: HeaderFilter
+            - name: JwtValidationFilter
+            - name: HmacValidationFilter
+            - name: ScopeValidationFilter
+#  Scope mapping
+gateway:
+  scope:
+    rules:
+      - path: /api/v1/b2b/**
+        required: B2B
+
+      - path: /api/v1/b2b2c/**
+        required: B2B2C
+
+      - path: /api/payment/**
+        required: payment
+
+jwt:
+  secret: my-super-secret-key-which-is-long-enough
+
+logging:
+  file:
+    name: logs/app.log

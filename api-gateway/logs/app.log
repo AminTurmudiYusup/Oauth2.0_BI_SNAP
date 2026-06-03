@@ -1,0 +1,45 @@
+2026-06-03T16:44:02.683+07:00  INFO 21684 --- [api-gateway] [main] c.example.gateway.ApiGatewayApplication  : Starting ApiGatewayApplication using Java 18.0.1.1 with PID 21684 (/media/amin/DATA1/KULIAH/Semester4/api-gateway/target/classes started by amin in /media/amin/DATA1/KULIAH/Semester4/api-gateway)
+2026-06-03T16:44:02.778+07:00  INFO 21684 --- [api-gateway] [main] c.example.gateway.ApiGatewayApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-03T16:44:14.647+07:00  INFO 21684 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2026-06-03T16:44:18.699+07:00  INFO 21684 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4034 ms. Found 1 R2DBC repository interface.
+2026-06-03T16:44:19.367+07:00  INFO 21684 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9491b0be-15d8-3636-9bf3-fc0f21d6422a
+2026-06-03T16:44:27.705+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-06-03T16:44:27.705+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-06-03T16:44:27.705+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-06-03T16:44:27.706+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-06-03T16:44:27.706+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-06-03T16:44:27.706+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-06-03T16:44:27.706+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-06-03T16:44:27.706+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-06-03T16:44:27.706+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-06-03T16:44:27.707+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-06-03T16:44:27.707+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-06-03T16:44:27.707+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-06-03T16:44:27.707+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-06-03T16:44:27.707+07:00  INFO 21684 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-06-03T16:44:28.199+07:00  INFO 21684 --- [api-gateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081 (http)
+2026-06-03T16:44:28.264+07:00  INFO 21684 --- [api-gateway] [main] c.example.gateway.ApiGatewayApplication  : Started ApiGatewayApplication in 32.244 seconds (process running for 44.363)
+2026-06-03T16:45:30.710+07:00  INFO 21684 --- [api-gateway] [reactor-http-epoll-2] c.example.gateway.filter.HeaderFilter    : Path >>>> /api/v1/b2b/balance
+2026-06-03T16:45:30.712+07:00  INFO 21684 --- [api-gateway] [reactor-http-epoll-2] c.e.gateway.filter.JwtValidationFilter   : Access token Jwt filter >>>> eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZjkwY2M0ZS04YjkxLTRmOGYtYWIwMS0wYTlmZDg5Yzk4MTAiLCJjbGllbnRJZCI6Im15LWNsaWVudC1pZCIsInNjb3BlIjoiQjJCIiwiaWF0IjoxNzgwNDc5OTI4LCJuYmYiOjE3ODA0Nzk5MjgsImV4cCI6MTc4MDQ4MzUyOH0.7bluWgq4S8P4JvlIQuUxh5io_wKekUj7cz0lmb9gAe8
+2026-06-03T16:45:30.765+07:00  INFO 21684 --- [api-gateway] [reactor-http-epoll-2] c.e.gateway.filter.HmacValidationFilter  : access token >>> eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZjkwY2M0ZS04YjkxLTRmOGYtYWIwMS0wYTlmZDg5Yzk4MTAiLCJjbGllbnRJZCI6Im15LWNsaWVudC1pZCIsInNjb3BlIjoiQjJCIiwiaWF0IjoxNzgwNDc5OTI4LCJuYmYiOjE3ODA0Nzk5MjgsImV4cCI6MTc4MDQ4MzUyOH0.7bluWgq4S8P4JvlIQuUxh5io_wKekUj7cz0lmb9gAe8     body   >>> {
+  "partnerId": "PARTNER_ABC",
+  "accountId": "ACC123456",
+  "requestId": "REQ-20260505-001",
+  "timestamp": 1714900000000,
+  "signature": "abc123signature"
+}
+2026-06-03T16:45:30.782+07:00  INFO 21684 --- [api-gateway] [boundedElastic-1] c.e.gateway.filter.HmacValidationFilter  : String to sign >>> POST:/api/v1/b2b/balance:eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZjkwY2M0ZS04YjkxLTRmOGYtYWIwMS0wYTlmZDg5Yzk4MTAiLCJjbGllbnRJZCI6Im15LWNsaWVudC1pZCIsInNjb3BlIjoiQjJCIiwiaWF0IjoxNzgwNDc5OTI4LCJuYmYiOjE3ODA0Nzk5MjgsImV4cCI6MTc4MDQ4MzUyOH0.7bluWgq4S8P4JvlIQuUxh5io_wKekUj7cz0lmb9gAe8:90921425b971d86da20f8bd66dc9273330c6b8c9e9d685251e0970eef9acc4d5:2020-12-17T10:55:00+07:00
+2026-06-03T16:45:30.794+07:00  INFO 21684 --- [api-gateway] [boundedElastic-1] c.e.gateway.filter.HmacValidationFilter  : client signature    >>> aOKCNFPBlWoBtAuPctQY5Qk3Aqxf+mLzdr79uVTRNn8QAmmnh/cbWRWLKmVLfUh1x3/0dGwF/DLAJtA0xfC1Wg==   server signature   >>>> aOKCNFPBlWoBtAuPctQY5Qk3Aqxf+mLzdr79uVTRNn8QAmmnh/cbWRWLKmVLfUh1x3/0dGwF/DLAJtA0xfC1Wg==
+2026-06-03T16:48:54.885+07:00  INFO 21684 --- [api-gateway] [reactor-http-epoll-5] c.example.gateway.filter.HeaderFilter    : Path >>>> /api/v1/b2b2c/topup
+2026-06-03T16:48:54.885+07:00  INFO 21684 --- [api-gateway] [reactor-http-epoll-5] c.e.gateway.filter.JwtValidationFilter   : Access token Jwt filter >>>> eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZjkwY2M0ZS04YjkxLTRmOGYtYWIwMS0wYTlmZDg5Yzk4MTAiLCJjbGllbnRJZCI6Im15LWNsaWVudC1pZCIsInNjb3BlIjoiQjJCIiwiaWF0IjoxNzgwNDc5OTI4LCJuYmYiOjE3ODA0Nzk5MjgsImV4cCI6MTc4MDQ4MzUyOH0.7bluWgq4S8P4JvlIQuUxh5io_wKekUj7cz0lmb9gAe8
+2026-06-03T16:48:54.889+07:00  INFO 21684 --- [api-gateway] [reactor-http-epoll-5] c.e.gateway.filter.HmacValidationFilter  : access token >>> eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZjkwY2M0ZS04YjkxLTRmOGYtYWIwMS0wYTlmZDg5Yzk4MTAiLCJjbGllbnRJZCI6Im15LWNsaWVudC1pZCIsInNjb3BlIjoiQjJCIiwiaWF0IjoxNzgwNDc5OTI4LCJuYmYiOjE3ODA0Nzk5MjgsImV4cCI6MTc4MDQ4MzUyOH0.7bluWgq4S8P4JvlIQuUxh5io_wKekUj7cz0lmb9gAe8     body   >>> {
+  "partnerId": "PARTNER_ABC",
+  "accountId": "ACC123456",
+  "amount": 100.00,
+  "currency": "USD",
+  "requestId": "REQ-001",
+  "timestamp": 1714900000000,
+  "signature": "dummy-signature"
+}
+2026-06-03T16:48:54.905+07:00  INFO 21684 --- [api-gateway] [boundedElastic-2] c.e.gateway.filter.HmacValidationFilter  : String to sign >>> POST:/api/v1/b2b2c/topup:eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZjkwY2M0ZS04YjkxLTRmOGYtYWIwMS0wYTlmZDg5Yzk4MTAiLCJjbGllbnRJZCI6Im15LWNsaWVudC1pZCIsInNjb3BlIjoiQjJCIiwiaWF0IjoxNzgwNDc5OTI4LCJuYmYiOjE3ODA0Nzk5MjgsImV4cCI6MTc4MDQ4MzUyOH0.7bluWgq4S8P4JvlIQuUxh5io_wKekUj7cz0lmb9gAe8:bb7c185ad02b25f7b7476056eb3edd070c6fa03c48dfe63d30dedeb899b1e28b:2020-12-17T10:55:00+07:00
+2026-06-03T16:48:54.906+07:00  INFO 21684 --- [api-gateway] [boundedElastic-2] c.e.gateway.filter.HmacValidationFilter  : client signature    >>> o0YQ1Xptph4o1YemFRBWcB7CL8yKkCdHrsOp6fV0CIgHzm0wMLyE7Nr0+uPViJp2Cs6qpb+qmq56znanI4LiDg==   server signature   >>>> o0YQ1Xptph4o1YemFRBWcB7CL8yKkCdHrsOp6fV0CIgHzm0wMLyE7Nr0+uPViJp2Cs6qpb+qmq56znanI4LiDg==

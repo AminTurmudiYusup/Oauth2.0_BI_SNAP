@@ -1,0 +1,42 @@
+2026-06-03T16:44:02.440+07:00  INFO 21864 --- [auth_server] [main] com.authserver.AuthServerApplication     : Starting AuthServerApplication using Java 17.0.14 with PID 21864 (/media/amin/DATA1/KULIAH/Semester4/auth_server/target/classes started by amin in /media/amin/DATA1/KULIAH/Semester4/auth_server)
+2026-06-03T16:44:02.572+07:00 DEBUG 21864 --- [auth_server] [main] com.authserver.AuthServerApplication     : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-03T16:44:02.574+07:00  INFO 21864 --- [auth_server] [main] com.authserver.AuthServerApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-06-03T16:44:19.725+07:00  INFO 21864 --- [auth_server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-03T16:44:19.978+07:00  INFO 21864 --- [auth_server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162 ms. Found 6 JPA repository interfaces.
+2026-06-03T16:44:23.731+07:00  INFO 21864 --- [auth_server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-03T16:44:23.745+07:00  INFO 21864 --- [auth_server] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-03T16:44:23.745+07:00  INFO 21864 --- [auth_server] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-03T16:44:23.844+07:00  INFO 21864 --- [auth_server] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-03T16:44:23.845+07:00  INFO 21864 --- [auth_server] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 20826 ms
+2026-06-03T16:44:25.435+07:00  INFO 21864 --- [auth_server] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-03T16:44:26.158+07:00  INFO 21864 --- [auth_server] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-03T16:44:26.457+07:00  INFO 21864 --- [auth_server] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-03T16:44:28.454+07:00  INFO 21864 --- [auth_server] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-03T16:44:28.671+07:00  INFO 21864 --- [auth_server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-03T16:44:30.190+07:00  INFO 21864 --- [auth_server] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@601d9f3a
+2026-06-03T16:44:30.196+07:00  INFO 21864 --- [auth_server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-03T16:44:30.532+07:00  WARN 21864 --- [auth_server] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-03T16:44:32.178+07:00  INFO 21864 --- [auth_server] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-03T16:44:33.361+07:00  INFO 21864 --- [auth_server] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-03T16:44:34.697+07:00 DEBUG 21864 --- [auth_server] [main] c.a.s.filter.ClientAuthenticationFilter  : Filter 'clientAuthenticationFilter' configured for use
+2026-06-03T16:44:35.293+07:00  WARN 21864 --- [auth_server] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-03T16:44:35.448+07:00  INFO 21864 --- [auth_server] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-06-03T16:44:36.583+07:00  INFO 21864 --- [auth_server] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-03T16:44:37.792+07:00  INFO 21864 --- [auth_server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-03T16:44:37.814+07:00  INFO 21864 --- [auth_server] [main] com.authserver.AuthServerApplication     : Started AuthServerApplication in 38.608 seconds (process running for 40.938)
+2026-06-03T16:45:27.304+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-03T16:45:27.304+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-03T16:45:27.306+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-03T16:45:27.337+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-1] c.a.s.filter.ClientAuthenticationFilter  : Filter section log URI >>>> /api/v1/access-token/b2b
+2026-06-03T16:45:27.337+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-1] c.a.s.filter.ClientAuthenticationFilter  : Headers:my-client-id  , 20260406T120000  ,iGBFdt64ofUdsO0FNR6nCrzuE7HubjqdLuGG0058TmVK+NqCQTju2JpnzTgF/h/MPcayVpUavwfx0EehQ/lMSr7OkbwHncGf0RVOM0ugEF0fAYVWyU1fn+qYeCgd08eGfvpMbKA9GnboCoC1iYF4AeQPNZlcuqkNheLdyyAc9RQhWHLBQrOUWjmT/CJSBuF1KFnkLufVtE3t9jbXDJnKw2w/cE9DtRoDGAjglAdjfNVZRTHk6nryggTsr+eXFf84Kyif62/NYi4RT7AG17nsJiRAkrdgh9OGWcdkHQFW+ObWLfYaUN5AW/GcmPGFrSXdfoWmd7jdX2aTEVJkjvf69g== 
+2026-06-03T16:45:27.681+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-1] c.a.s.filter.ClientAuthenticationFilter  : Signature valid ???? true
+2026-06-03T16:48:52.423+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-3] c.a.s.filter.ClientAuthenticationFilter  : Filter section log URI >>>> /api/v1/authorize
+2026-06-03T16:48:52.492+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-4] c.a.s.filter.ClientAuthenticationFilter  : Filter section log URI >>>> /login
+2026-06-03T16:48:53.007+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-5] c.a.s.filter.ClientAuthenticationFilter  : Filter section log URI >>>> /login
+2026-06-03T16:48:53.239+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-6] c.a.s.filter.ClientAuthenticationFilter  : Filter section log URI >>>> /api/v1/authorize
+2026-06-03T16:48:53.893+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-7] c.a.s.filter.ClientAuthenticationFilter  : Filter section log URI >>>> /api/v1/access-token/b2b2c
+2026-06-03T16:48:53.894+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-7] c.a.s.filter.ClientAuthenticationFilter  : Headers:my-client-id  , 20260406T120000  ,iGBFdt64ofUdsO0FNR6nCrzuE7HubjqdLuGG0058TmVK+NqCQTju2JpnzTgF/h/MPcayVpUavwfx0EehQ/lMSr7OkbwHncGf0RVOM0ugEF0fAYVWyU1fn+qYeCgd08eGfvpMbKA9GnboCoC1iYF4AeQPNZlcuqkNheLdyyAc9RQhWHLBQrOUWjmT/CJSBuF1KFnkLufVtE3t9jbXDJnKw2w/cE9DtRoDGAjglAdjfNVZRTHk6nryggTsr+eXFf84Kyif62/NYi4RT7AG17nsJiRAkrdgh9OGWcdkHQFW+ObWLfYaUN5AW/GcmPGFrSXdfoWmd7jdX2aTEVJkjvf69g== 
+2026-06-03T16:48:53.904+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-7] c.a.s.filter.ClientAuthenticationFilter  : Signature valid ???? true
+2026-06-03T16:48:54.499+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-8] c.a.s.filter.ClientAuthenticationFilter  : Filter section log URI >>>> /api/v1/access-token/b2b2c
+2026-06-03T16:48:54.499+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-8] c.a.s.filter.ClientAuthenticationFilter  : Headers:my-client-id  , 20260406T120000  ,iGBFdt64ofUdsO0FNR6nCrzuE7HubjqdLuGG0058TmVK+NqCQTju2JpnzTgF/h/MPcayVpUavwfx0EehQ/lMSr7OkbwHncGf0RVOM0ugEF0fAYVWyU1fn+qYeCgd08eGfvpMbKA9GnboCoC1iYF4AeQPNZlcuqkNheLdyyAc9RQhWHLBQrOUWjmT/CJSBuF1KFnkLufVtE3t9jbXDJnKw2w/cE9DtRoDGAjglAdjfNVZRTHk6nryggTsr+eXFf84Kyif62/NYi4RT7AG17nsJiRAkrdgh9OGWcdkHQFW+ObWLfYaUN5AW/GcmPGFrSXdfoWmd7jdX2aTEVJkjvf69g== 
+2026-06-03T16:48:54.501+07:00  INFO 21864 --- [auth_server] [http-nio-8080-exec-8] c.a.s.filter.ClientAuthenticationFilter  : Signature valid ???? true
