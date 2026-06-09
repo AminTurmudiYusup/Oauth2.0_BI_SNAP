@@ -2,7 +2,7 @@ name: Run Unit Tests
 
 on:
   push:
-    branches: [ "master", "develop" ]
+    branches: [ "master", "main", "develop" ]
   pull_request:
 
 jobs:
@@ -17,4 +17,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - run: mvn clean test
+      - name: Run tests in auth_server
+        run: |
+          cd auth_server
+          mvn clean test
